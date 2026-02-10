@@ -6,6 +6,7 @@ export function initSocket(server) {
   io = new Server(server, {
     cors: { origin: "*" }
   })
+  return io
 }
 
 export function sendUpdate(count) {
