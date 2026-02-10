@@ -2,7 +2,8 @@ import { useEffect, useState } from "react"
 import { io } from "socket.io-client"
 import "./App.css"
 
-const socket = io("http://localhost:5000")
+// Use the current hostname but port 5000 for the backend
+const socket = io(`http://${window.location.hostname}:5000`)
 
 export default function App() {
   const [count, setCount] = useState(0)
