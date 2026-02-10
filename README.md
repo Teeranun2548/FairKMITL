@@ -1,0 +1,2 @@
+# FairKMITL
+docker compose
